@@ -11,7 +11,7 @@ public class Main_file {
 	public static void main(String[] args) {
 	
 		appcontext = new ClassPathXmlApplicationContext("applicationcontext.xml");
-		
+		System.out.println("test");
 		Employee emp=(Employee) appcontext.getBean("emp");
 		System.out.println(emp.getEmpid()+". "+emp.getName()+" :"+emp.getDesignation());
 		
